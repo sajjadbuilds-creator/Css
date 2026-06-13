@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        display: inline-flex;
+        border: 2px solid rgb(131, 93, 33);
+        border-radius: 20px;
+        gap: 20px;
+        margin-top: 29px;
+        padding: 20px;
+        width: 100%;
+        background-color: rgb(173, 110, 33);
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color: rgb(173, 110, 33);
+        border: 1px solid rgb(68, 33, 0);
+        border-radius: 10px;
+        padding: 10px;
+        transition: 1s;
+      }
+
+      .icon {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+
+      nav a:hover {
+        transform: translateY(-10px);
+        background-color: rgb(139, 68, 9);
+        color: rgb(255, 255, 255);
+        box-shadow: 10px;
+      }
+    @media (max-width: 900px) {
+    nav {
+        gap: 15px;
+        padding: 12px 20px;
+    }
+
+    .nav-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-item span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 95%;
+        gap: 10px;
+        padding: 10px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .nav-item {
+        flex-shrink: 0;
+    }
+
+    .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-item span {
+        font-size: 11px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="a">
+        <a href="home.html" onclick="alert('Home clicked')">
+            <img src="icon 1.png" alt="Home icon"  class="icon">
+            <span class="text">Home</span>
+
+        </a>
+        <a href="profile.html"onclick="alert('Profile clicked')">
+            <img src="icon2.png" alt="Profile icon" class="icon">
+            <span class="text">Profile</span>
+
+        </a>
+        <a href="messages.html" onclick="alert('Messages clicked')">
+            <img src="icon3.jpg" alt="Messages icon" class="icon">
+            <span class="text">Messages</span>
+
+        </a>
+        <a href="photos.html" onclick="alert('Photos clicked')">
+            <img src="icon4.jpg" alt="Photos icon" class="icon">
+            <span class="text">Photos</span>
+  
+        </a>
+        <a href="settings.html" onclick="alert('settings clicked')">
+            <img src="icon5.jpg" alt="settings icon" class="icon">
+            <span class="text">Settings</span>
+            
+        </a>
+    </nav>
+</body>
+</html>
